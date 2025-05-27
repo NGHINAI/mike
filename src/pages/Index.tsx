@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
 import MadeByHumans from "@/components/MadeByHumans";
 import Footer from "@/components/Footer";
+import CTA from "@/components/CTA";
 
 const Index = () => {
   // Initialize intersection observer to detect when elements enter viewport
@@ -61,7 +62,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="space-y-4 sm:space-y-8"> {/* Reduced space on mobile */}
+      <main className="space-y-4 sm:space-y-8">
         <Hero />
         <HumanoidSection />
         <SpecsSection />
@@ -69,6 +70,7 @@ const Index = () => {
         <ImageShowcaseSection />
         <Features />
         <Testimonials />
+        <CTA />
         <Newsletter />
         <MadeByHumans />
       </main>
