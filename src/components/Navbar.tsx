@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
@@ -75,7 +74,6 @@ const Navbar = () => {
             Home
           </a>
           <a href="#features" className="nav-link">Features</a>
-          <a href="#testimonials" className="nav-link">Results</a>
           <a href="#get-access" className="nav-link">Get Started</a>
         </nav>
 
@@ -116,16 +114,6 @@ const Navbar = () => {
             }}
           >
             Features
-          </a>
-          <a 
-            href="#testimonials" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
-            onClick={() => {
-              setIsMenuOpen(false);
-              document.body.style.overflow = '';
-            }}
-          >
-            Results
           </a>
           <a 
             href="#get-access" 
