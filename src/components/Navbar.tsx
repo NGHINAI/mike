@@ -58,9 +58,10 @@ const Navbar = () => {
           aria-label="Mike Brief AI"
         >
           <img 
-            src="/lovable-uploads/71b6fbbe-0f03-4ae8-8419-7575cffc756a.png" 
+            src="/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png" 
             alt="MikeBrief AI Logo" 
-            className="h-7 sm:h-8" 
+            className="h-10 sm:h-12 w-auto object-contain" 
+            style={{ filter: 'brightness(0)', backgroundColor: 'transparent' }}
           />
         </a>
 
