@@ -1,58 +1,60 @@
 
-import React, { useRef } from "react";
+import React from "react";
+import { MessageSquare, Zap, Bell } from "lucide-react";
 
 const DetailsSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const features = [
+    {
+      icon: MessageSquare,
+      title: "Natural Language Commands",
+      description: "Simply @mention Mike or use slash commands like \"/mike summarize contract for Johnson case\""
+    },
+    {
+      icon: Zap,
+      title: "Intelligent Processing",
+      description: "Mike's specialized AI agents work behind the scenes to complete complex legal tasks"
+    },
+    {
+      icon: Bell,
+      title: "Proactive Insights",
+      description: "Receive automated alerts, suggestions, and insights directly in your Slack channels"
+    }
+  ];
 
   return (
-    <section className="py-12 bg-gray-50 relative" id="details" ref={sectionRef}>
-      <div className="section-container opacity-0 animate-on-scroll">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="text-left">
-            <h2 className="text-4xl sm:text-5xl font-display font-bold mb-6">Simple Slack Commands, Powerful Results</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Mike integrates seamlessly with your existing Slack workspace. No new platforms to learn, 
-              no workflow disruption. Just powerful AI capabilities delivered through simple, natural language commands.
-            </p>
-            
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-pulse-500 text-white rounded-full flex items-center justify-center font-semibold">1</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Natural Language Commands</h3>
-                  <p className="text-gray-600">Simply @mention Mike or use slash commands like "/mike summarize contract for Johnson case"</p>
+    <section className="py-20 bg-gray-50">
+      <div className="container max-w-6xl mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900">
+            Simple Commands, Powerful Results
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Mike integrates seamlessly with your existing Slack workspace. No new platforms to learn, 
+            no workflow disruption. Just powerful AI capabilities delivered through simple, natural language commands.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <div key={index} className="text-center">
+                <div className="w-16 h-16 bg-pulse-500 text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon size={24} />
                 </div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-pulse-500 text-white rounded-full flex items-center justify-center font-semibold">2</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Intelligent Processing</h3>
-                  <p className="text-gray-600">Mike's specialized AI agents work behind the scenes to complete complex legal tasks</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-pulse-500 text-white rounded-full flex items-center justify-center font-semibold">3</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Proactive Insights</h3>
-                  <p className="text-gray-600">Receive automated alerts, suggestions, and insights directly in your Slack channels</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80" 
-              alt="Legal team collaborating with AI assistance" 
-              className="w-full h-auto rounded-2xl shadow-elegant"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
-            <div className="absolute bottom-6 left-6 text-white">
-              <p className="text-lg font-semibold">95% Task Automation</p>
-              <p className="text-sm opacity-90">Zero learning curve required</p>
-            </div>
+            );
+          })}
+        </div>
+        
+        <div className="text-center mt-16">
+          <div className="inline-flex items-center px-6 py-3 bg-white rounded-full shadow-lg">
+            <span className="text-2xl font-bold text-pulse-500 mr-2">95%</span>
+            <span className="text-gray-700">Task Automation</span>
+            <span className="mx-3 text-gray-300">•</span>
+            <span className="text-gray-700">Zero Learning Curve</span>
           </div>
         </div>
       </div>
