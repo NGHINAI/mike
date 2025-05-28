@@ -7,13 +7,6 @@ const DetailsSection = () => {
   return (
     <section className="py-12 bg-gray-50 relative" id="details" ref={sectionRef}>
       <div className="section-container opacity-0 animate-on-scroll">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="pulse-chip">
-            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">05</span>
-            <span>How It Works</span>
-          </div>
-        </div>
-        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-left">
             <h2 className="text-4xl sm:text-5xl font-display font-bold mb-6">Simple Slack Commands, Powerful Results</h2>
