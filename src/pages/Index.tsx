@@ -1,15 +1,16 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import HumanoidSection from "@/components/HumanoidSection";
 import SpecsSection from "@/components/SpecsSection";
 import DetailsSection from "@/components/DetailsSection";
+import ImageShowcaseSection from "@/components/ImageShowcaseSection";
 import Features from "@/components/Features";
-import BetaForm from "@/components/BetaForm";
 import Footer from "@/components/Footer";
+import CTA from "@/components/CTA";
 
 const Index = () => {
-  // Initialize intersection observer for animations
+  // Initialize intersection observer to detect when elements enter viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -32,7 +33,7 @@ const Index = () => {
   }, []);
 
   useEffect(() => {
-    // Smooth scrolling for anchor links
+    // This helps ensure smooth scrolling for the anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -43,7 +44,8 @@ const Index = () => {
         const targetElement = document.getElementById(targetId);
         if (!targetElement) return;
         
-        const offset = 80;
+        // Increased offset to account for mobile nav
+        const offset = window.innerWidth < 768 ? 100 : 80;
         
         window.scrollTo({
           top: targetElement.offsetTop - offset,
@@ -54,14 +56,16 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <Navbar />
-      <main>
+      <main className="space-y-4 sm:space-y-8">
         <Hero />
+        <HumanoidSection />
         <SpecsSection />
         <DetailsSection />
+        <ImageShowcaseSection />
         <Features />
-        <BetaForm />
+        <CTA />
       </main>
       <Footer />
     </div>

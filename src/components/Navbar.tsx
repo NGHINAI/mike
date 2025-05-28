@@ -58,11 +58,11 @@ const Navbar = () => {
           aria-label="Mike Brief AI"
         >
           <img 
-            src="/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png" 
-            alt="MikeBrief AI Logo" 
-            className="h-10 sm:h-12 w-auto object-contain" 
-            style={{ filter: 'brightness(0)', backgroundColor: 'transparent' }}
+            src="/logo.svg" 
+            alt="Mike Brief AI Logo" 
+            className="h-7 sm:h-8" 
           />
+          <span className="text-xl font-bold text-gray-900">Mike</span>
         </a>
 
         {/* Desktop Navigation */}

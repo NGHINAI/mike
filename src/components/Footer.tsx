@@ -9,11 +9,11 @@ const Footer = () => {
           {/* Logo and branding */}
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png" 
-              alt="MikeBrief AI Logo" 
-              className="h-8 w-auto object-contain" 
-              style={{ filter: 'brightness(0)', backgroundColor: 'transparent' }}
+              src="/logo.svg" 
+              alt="Mike Brief AI Logo" 
+              className="h-6" 
             />
+            <span className="text-lg font-bold text-gray-900">MikeBrief AI</span>
           </div>
           
           {/* Copyright and description */}
