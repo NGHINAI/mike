@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
@@ -37,13 +38,16 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 md:py-4 transition-all duration-300",
+        "fixed top-0 z-50 transition-all duration-700 ease-in-out",
         isScrolled 
-          ? "bg-white/80 backdrop-blur-md shadow-sm" 
-          : "bg-transparent"
+          ? "left-1/2 transform -translate-x-1/2 top-4 w-auto max-w-4xl mx-auto px-6 py-3 bg-white/20 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg" 
+          : "left-0 right-0 py-2 sm:py-3 md:py-4 bg-transparent"
       )}
     >
-      <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className={cn(
+        "flex items-center justify-between transition-all duration-700",
+        isScrolled ? "px-0" : "container px-4 sm:px-6 lg:px-8"
+      )}>
         <a 
           href="#" 
           className="flex items-center space-x-2"
