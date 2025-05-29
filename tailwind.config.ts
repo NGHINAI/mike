@@ -63,19 +63,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Monochrome color palette
+				// Custom colors for Pulse Robot
 				pulse: {
-					"50": "#fafafa",
-					"100": "#f5f5f5",
-					"200": "#e5e5e5",
-					"300": "#d4d4d4",
-					"400": "#a3a3a3",
-					"500": "#737373", // Primary gray
-					"600": "#525252",
-					"700": "#404040",
-					"800": "#262626",
-					"900": "#171717",
-					"950": "#0a0a0a",
+					"50": "#fff7ed",
+					"100": "#ffedd5",
+					"200": "#fed7aa",
+					"300": "#fdba74",
+					"400": "#fb923c",
+					"500": "#f97316", // Primary orange
+					"600": "#ea580c",
+					"700": "#c2410c",
+					"800": "#9a3412",
+					"900": "#7c2d12",
+					"950": "#431407",
 				},
 				dark: {
 					"900": "#121212", // Almost black
@@ -137,9 +137,9 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-gradient': 'linear-gradient(90deg, hsla(0, 0%, 95%, 1) 0%, hsla(0, 0%, 90%, 1) 100%)',
-				'hero-gradient-2': 'linear-gradient(90deg, hsla(0, 0%, 88%, 1) 0%, hsla(0, 0%, 82%, 1) 100%)',
-				'pulse-gradient': 'linear-gradient(180deg, rgba(115,115,115,0.8) 0%, rgba(115,115,115,0) 100%)',
+				'hero-gradient': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
+				'hero-gradient-2': 'linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%)',
+				'pulse-gradient': 'linear-gradient(180deg, rgba(249,115,22,0.8) 0%, rgba(249,115,22,0) 100%)',
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
