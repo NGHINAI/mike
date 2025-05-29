@@ -1,13 +1,12 @@
+
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import HumanoidSection from "@/components/HumanoidSection";
 import SpecsSection from "@/components/SpecsSection";
 import DetailsSection from "@/components/DetailsSection";
-import ImageShowcaseSection from "@/components/ImageShowcaseSection";
 import Features from "@/components/Features";
+import BetaForm from "@/components/BetaForm";
 import Footer from "@/components/Footer";
-import CTA from "@/components/CTA";
 
 const Index = () => {
   // Initialize intersection observer to detect when elements enter viewport
@@ -58,14 +57,12 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="space-y-4 sm:space-y-8">
+      <main className="space-y-0">
         <Hero />
-        <HumanoidSection />
         <SpecsSection />
         <DetailsSection />
-        <ImageShowcaseSection />
         <Features />
-        <CTA />
+        <BetaForm />
       </main>
       <Footer />
     </div>
