@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -26,63 +25,40 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: 'hsl(0, 0%, 10%)',
+					foreground: 'hsl(0, 0%, 98%)'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: 'hsl(0, 0%, 96%)',
+					foreground: 'hsl(0, 0%, 10%)'
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+					DEFAULT: 'hsl(0, 0%, 0%)',
+					foreground: 'hsl(0, 0%, 100%)'
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: 'hsl(0, 0%, 96%)',
+					foreground: 'hsl(0, 0%, 45%)'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: 'hsl(0, 0%, 94%)',
+					foreground: 'hsl(0, 0%, 10%)'
 				},
 				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
+					DEFAULT: 'hsl(0, 0%, 100%)',
+					foreground: 'hsl(0, 0%, 10%)'
 				},
 				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					DEFAULT: 'hsl(0, 0%, 100%)',
+					foreground: 'hsl(0, 0%, 10%)'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				},
-				// Custom colors for Pulse Robot
-				pulse: {
-					"50": "#fff7ed",
-					"100": "#ffedd5",
-					"200": "#fed7aa",
-					"300": "#fdba74",
-					"400": "#fb923c",
-					"500": "#f97316", // Primary orange
-					"600": "#ea580c",
-					"700": "#c2410c",
-					"800": "#9a3412",
-					"900": "#7c2d12",
-					"950": "#431407",
-				},
-				dark: {
-					"900": "#121212", // Almost black
-					"800": "#1e1e1e",
-					"700": "#2d2d2d",
-					"600": "#3d3d3d",
-				},
+				custom: {
+					gradient: {
+						start: 'hsl(0, 0%, 95%)',
+						mid: 'hsl(0, 0%, 85%)',
+						end: 'hsl(0, 0%, 75%)'
+					}
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
