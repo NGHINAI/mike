@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
@@ -46,7 +45,12 @@ const Hero = () => {
         padding: isMobile ? '120px 12px 60px' : '140px 20px 80px'
       }}
     >
-      <div className="absolute -top-[10%] -right-[5%] w-1/2 h-[70%] bg-pulse-gradient opacity-20 blur-3xl rounded-full"></div>
+      <div 
+        className="absolute -top-[10%] -right-[5%] w-1/2 h-[70%] opacity-20 blur-3xl rounded-full"
+        style={{
+          background: 'linear-gradient(45deg, hsl(0, 0%, 95%), hsl(0, 0%, 85%), hsl(0, 0%, 75%))'
+        }}
+      ></div>
       
       <div className="container px-4 sm:px-6 lg:px-8" ref={containerRef}>
         <div className="text-center max-w-4xl mx-auto">
