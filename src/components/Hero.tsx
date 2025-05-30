@@ -79,7 +79,7 @@ const Hero = () => {
               href="#beta-access" 
               className="flex items-center justify-center group w-full sm:w-auto text-center" 
               style={{
-                backgroundColor: '#FE5C02',
+                backgroundColor: '#2D2D2D',
                 borderRadius: '1440px',
                 boxSizing: 'border-box',
                 color: '#FFFFFF',
