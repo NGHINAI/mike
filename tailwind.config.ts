@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -64,17 +65,17 @@ export default {
 				},
 				// Custom colors for Pulse Robot
 				pulse: {
-					"50": "#f8f9fa",
-					"100": "#e9ecef",
-					"200": "#dee2e6",
-					"300": "#ced4da",
-					"400": "#adb5bd",
-					"500": "#6c757d", // Primary gray
-					"600": "#495057",
-					"700": "#343a40",
-					"800": "#212529",
-					"900": "#0a0a0a",
-					"950": "#000000",
+					"50": "#fff7ed",
+					"100": "#ffedd5",
+					"200": "#fed7aa",
+					"300": "#fdba74",
+					"400": "#fb923c",
+					"500": "#f97316", // Primary orange
+					"600": "#ea580c",
+					"700": "#c2410c",
+					"800": "#9a3412",
+					"900": "#7c2d12",
+					"950": "#431407",
 				},
 				dark: {
 					"900": "#121212", // Almost black
@@ -136,9 +137,9 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-gradient': 'linear-gradient(90deg, #1E1E1E 0%, #2D2D2D 100%)',
-				'hero-gradient-2': 'linear-gradient(90deg, #2D2D2D 0%, #1E1E1E 100%)',
-				'pulse-gradient': 'linear-gradient(180deg, rgba(45,45,45,0.8) 0%, rgba(45,45,45,0) 100%)',
+				'hero-gradient': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
+				'hero-gradient-2': 'linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%)',
+				'pulse-gradient': 'linear-gradient(180deg, rgba(249,115,22,0.8) 0%, rgba(249,115,22,0) 100%)',
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
