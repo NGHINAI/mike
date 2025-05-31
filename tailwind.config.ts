@@ -19,11 +19,11 @@ export default {
 		},
 		extend: {
 			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
-				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
+				border: 'hsl(0, 0%, 90%)',
+				input: 'hsl(0, 0%, 90%)',
+				ring: 'hsl(0, 0%, 80%)',
+				background: 'hsl(0, 0%, 100%)',
+				foreground: 'hsl(0, 0%, 10%)',
 				primary: {
 					DEFAULT: 'hsl(0, 0%, 10%)',
 					foreground: 'hsl(0, 0%, 98%)'
@@ -58,6 +58,12 @@ export default {
 						mid: 'hsl(0, 0%, 85%)',
 						end: 'hsl(0, 0%, 75%)'
 					}
+				},
+				pulse: {
+					100: 'hsl(0, 0%, 90%)',
+					200: 'hsl(0, 0%, 80%)',
+					500: 'hsl(0, 0%, 50%)',
+					600: 'hsl(0, 0%, 40%)'
 				}
 			},
 			borderRadius: {
@@ -113,8 +119,8 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-gradient': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
-				'hero-gradient-2': 'linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%)',
+				'hero-gradient': 'linear-gradient(90deg, hsl(0, 0%, 85%) 0%, hsl(0, 0%, 55%) 100%)',
+				'hero-gradient-2': 'linear-gradient(90deg, hsl(0, 0%, 75%) 0%, hsl(0, 0%, 45%) 100%)',
 				'pulse-gradient': 'linear-gradient(180deg, rgba(249,115,22,0.8) 0%, rgba(249,115,22,0) 100%)',
 			},
 			fontFamily: {
