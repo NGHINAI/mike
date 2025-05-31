@@ -137,7 +137,11 @@
   }
 
   .pulse-chip {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-pulse-100 text-pulse-600 border border-pulse-200;
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+    background-color: theme('colors.pulse.100');
+    color: theme('colors.pulse.600');
+    border-color: theme('colors.pulse.200');
+    border-width: 1px; /* Ensure border is visible, as @apply border-pulse-200 also implies border-style: solid and border-width: 1px */
   }
   
   .section-container {

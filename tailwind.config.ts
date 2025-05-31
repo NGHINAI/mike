@@ -19,51 +19,51 @@ export default {
 		},
 		extend: {
 			colors: {
-				border: 'hsl(0, 0%, 90%)',
-				input: 'hsl(0, 0%, 90%)',
-				ring: 'hsl(0, 0%, 80%)',
-				background: 'hsl(0, 0%, 100%)',
-				foreground: 'hsl(0, 0%, 10%)',
+				border: '0 0% 90%',
+				input: '0 0% 90%',
+				ring: '0 0% 80%',
+				background: '0 0% 100%',
+				foreground: '0 0% 10%',
 				primary: {
-					DEFAULT: 'hsl(0, 0%, 10%)',
-					foreground: 'hsl(0, 0%, 98%)'
+					DEFAULT: '0 0% 10%',
+					foreground: '0 0% 98%'
 				},
 				secondary: {
-					DEFAULT: 'hsl(0, 0%, 96%)',
-					foreground: 'hsl(0, 0%, 10%)'
+					DEFAULT: '0 0% 96%',
+					foreground: '0 0% 10%'
 				},
 				destructive: {
-					DEFAULT: 'hsl(0, 0%, 0%)',
-					foreground: 'hsl(0, 0%, 100%)'
+					DEFAULT: '0 0% 0%',
+					foreground: '0 0% 100%'
 				},
 				muted: {
-					DEFAULT: 'hsl(0, 0%, 96%)',
-					foreground: 'hsl(0, 0%, 45%)'
+					DEFAULT: '0 0% 96%',
+					foreground: '0 0% 45%'
 				},
 				accent: {
-					DEFAULT: 'hsl(0, 0%, 94%)',
-					foreground: 'hsl(0, 0%, 10%)'
+					DEFAULT: '0 0% 94%',
+					foreground: '0 0% 10%'
 				},
 				popover: {
-					DEFAULT: 'hsl(0, 0%, 100%)',
-					foreground: 'hsl(0, 0%, 10%)'
+					DEFAULT: '0 0% 100%',
+					foreground: '0 0% 10%'
 				},
 				card: {
-					DEFAULT: 'hsl(0, 0%, 100%)',
-					foreground: 'hsl(0, 0%, 10%)'
+					DEFAULT: '0 0% 100%',
+					foreground: '0 0% 10%'
 				},
 				custom: {
 					gradient: {
-						start: 'hsl(0, 0%, 95%)',
+						start: 'hsl(0, 0%, 95%)', // Keeping hsl() here as per original structure if these are not directly used by Tailwind like others
 						mid: 'hsl(0, 0%, 85%)',
 						end: 'hsl(0, 0%, 75%)'
 					}
 				},
 				pulse: {
-					100: 'hsl(0, 0%, 90%)',
-					200: 'hsl(0, 0%, 80%)',
-					500: 'hsl(0, 0%, 50%)',
-					600: 'hsl(0, 0%, 40%)'
+					'100': '0 0% 90%',
+					'200': '0 0% 80%',
+					'500': '0 0% 50%',
+					'600': '0 0% 40%',
 				}
 			},
 			borderRadius: {
